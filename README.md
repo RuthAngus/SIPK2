@@ -3,11 +3,16 @@ Systematics-Insensitive Periodograms for K2.
 
 To use this code, clone this repo and do
 
-`from SIP import SIP`
+`from SIP import SIP`.
+
+You'll need the Eigen light curves too.
+You can download those from http://bbq.dfm.io/ketu/elcs.
+You can also download any of DFM's ready-made raw K2 light curves from
+http://bbq.dfm.io/ketu/lightcurves.
 
 Usage:
 
-`s2n, amp2s, w = SIP(x, y, basis, frequencies)`
+`s2n, amp2s, w = SIP(x, y, basis, frequencies)`.
 
 Returns the squared signal-to-noise-ratio, the squared amplitude and the
 weights.
