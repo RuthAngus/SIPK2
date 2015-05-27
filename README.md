@@ -3,15 +3,16 @@ Systematics-Insensitive Periodograms for K2
 
 To use this code, clone this repo and do
 
-`from K2pgram import K2pgram`
+`from SIP import SIP`
 
 Usage:
 
-`s2n = K2pgram(x, y, basis, frequencies)`
+`s2n, amp2s, w = SIP(x, y, basis, frequencies)`
 
-I'm still working on making demos.
-For some more (not very well commented code), see
-https://github.com/RuthAngus/K2rotation
+Returns the squared signal-to-noise-ratio, the squared amplitude and the
+weights.
+
+Check out a demo at `http://nbviewer.ipython.org/github/RuthAngus/SIPK2/blob/master/SIPdemo.ipynb`
 
 # Licence
 
