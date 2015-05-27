@@ -12,11 +12,7 @@ Usage:
 Returns the squared signal-to-noise-ratio, the squared amplitude and the
 weights.
 
-Check out a demo at `http://nbviewer.ipython.org/github/RuthAngus/SIPK2/blob/master/SIPdemo.ipynb <http://nbviewer.ipython.org/github/RuthAngus/SIPK2/blob/master/SIPdemo.ipynb>`_.
-
-http://nbviewer.ipython.org/github/RuthAngus/SIPK2/blob/master/SIPdemo.ipynb
-
-`dan.iel.fm/george <http://dan.iel.fm/george>`_.
+Check out the demo at http://nbviewer.ipython.org/github/RuthAngus/SIPK2/blob/master/SIPdemo.ipynb
 
 # Licence
 
