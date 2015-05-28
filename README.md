@@ -1,6 +1,9 @@
 # SIPK2
 Systematics-Insensitive Periodograms for K2.
 
+The paper associated with this code, "Systematics-insensitive periodic signal
+search with K2" can be found at http://arxiv.org/abs/1505.07105.
+
 To use this code, clone this repo and do
 
 `from SIP import SIP`.
