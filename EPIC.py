@@ -4,9 +4,9 @@ import h5py
 import fitsio
 from SIP import SIP, eval_freq
 
-def EPICSIP(EPIC, C, pmin=.01, pmax=100, nELC=150, plot=False):
+def EPICSIP(EPIC, C, periods, nELC=150, plot=False):
     '''
-    Given an EPIC ID, campaign number and minimum and maximum period,
+    Given an EPIC ID, campaign number and period array,
     produce a sip.
     '''
     fname = "ktwo%s-c%s_lpd-lc.fits" % (str(int(EPIC)), str(int(C)).zfill(2))
@@ -33,7 +33,6 @@ def EPICSIP(EPIC, C, pmin=.01, pmax=100, nELC=150, plot=False):
         plt.ylabel("Normalised Flux")
         plt.savefig("%s_lc" % EPIC)
 
-    periods = np.arange(pmin, pmax, .1*pmin)
     freqs = 1./periods
     s2n, amp2s, w = SIP(x, y, basis, freqs)
 
@@ -46,4 +45,4 @@ def EPICSIP(EPIC, C, pmin=.01, pmax=100, nELC=150, plot=False):
         plt.ylabel("Relative (S/N)^2")
         plt.savefig("%s_sip" % EPIC)
 
-    return x, y, periods, s2n, amp2s, w
+    return x, y, s2n, amp2s, w
